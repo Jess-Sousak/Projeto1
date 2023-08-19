@@ -210,6 +210,7 @@ nav{
     grid-template-columns: 1fr;
     margin-top: 30px;
 }  
+}
 /* PG CONTATOS */
 .formulary{
     width: 30%;
@@ -428,4 +429,3 @@ nav{
         background-color:  rgb(231, 12, 104);
         color:  #fff;
     }
-}
