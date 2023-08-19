@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum de Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containerform">
+        <h2 id="cont">Forum Barbie</h2>
+        <div class="thread" id="th1">
+            <h2> O que você achou do filme? <button id="bcoment">Mostrar Respostas</button></h2>
+            <div style="display: none;" class="respostas">
+                <p>Filme muito bom e bastante reflexivo</p>
+                <hr>
+                <p>Tema bem contemoraneo, um pouco complexo mas curti</p>
+                <hr>
+                <p>Cumpriu minhas expectativas</p>
+                <hr>
+                <form>
+                    <textarea></textarea>
+                    <input class="value" type="submit" name="acao" value="Enviar!"/>
+                </form>
+                </div>
+        </div> <!--thread-->
+    </div>
+    <div class="thread">
+        <h2> O que acharam da atuação dos atores? <button id="bcoment">Mostrar Respostas</button></h2>
+        <div style="display: none;" class="respostas">
+            <p>Gostei muito, a Margot Robbie foi sensacional no papel</p>
+            <hr>
+            <p>tiveram excelentes desempenho </p>
+            <hr>
+            <p>foi razoavel</p>
+            <hr>
+            <form >
+                <textarea></textarea>
+                <input class="value" type="submit" name="acao" value="Enviar"/>
+            </form>
+            </div>
+    </div> <!--thread-->
+</div>
+<div class="thread">
+    <h2> Esse filme tem potencial para ganhar o oscar desse ano? <button id="bcoment">Mostrar Respostas</button></h2>
+    <div style="display: none;" class="respostas">
+        <p>Não sei, foi lançado muito filme bom nesse ano</p>
+        <hr>
+        <p>Acredito que sim, foi um sucesso de bileteria mundial</p>
+        <hr>
+        <p>estou torcendo para que ganhe!</p>
+        <hr>
+        <form>
+            <textarea></textarea>
+            <input class="value" type="submit" name="acao" value="Enviar!"/>
+        </form>
+        </div>
+</div> <!--thread-->
+</div>
+    <script>
+        let buttonsResposta = document.querySelectorAll('.thread button');
+        for (let i = 0; i < buttonsResposta.length; i++){
+            buttonsResposta[i].addEventListener('click',()=>{
+                let respostas = document.querySelectorAll('.respostas');
+                respostas[i].style.display="block";
+            })
+        }
+        let forms = document.querySelectorAll('form');
+        for(let i = 0; i < forms.length; i++ ){
+            forms[i].addEventListener('submit', (e)=>{
+                e.preventDefault();
+                let conteudo = document.querySelectorAll('textarea')[i];
+                forms[i].insertAdjacentHTML('beforebegin','<p>'+ conteudo.value + '</p>')
+        })
+    }
+    </script>
+
+<p class="copright"> © 2023 Politica de Privacidade  </p> 
+</main>
+<footer id="footer">
+    <img id="logo" src="../Midias/logo_pequena-removebg-preview.png"/>
+<span>Todos os direitos reservados © </span>
+<span>Desenvolvido por Jessica Sousa</span>
+</footer> 
+
+</body>
+</html>
