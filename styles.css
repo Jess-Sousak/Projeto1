@@ -167,7 +167,7 @@ span{
     align-items: center;
 }
 
-/* @media(max-width: 768px){ 
+@media screen and (max-width: 768px){ 
     .footer-navigation{
         display: block;
     }
@@ -176,7 +176,7 @@ nav{
     display: none;
 }
 #banner{
-    background-position: 30%;
+    background-position: 50%;
 }
 #trailer-container{
     width: 100%;
@@ -185,30 +185,33 @@ nav{
     flex-direction: column;
 }
 .content{
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .trailer{
-    width: 100%;
+    width: 99%;
 }
 #sinopse{
     width: 95%;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
+    margin-left:inherit;
+    margin-top: 20px;
 }
 .description{
     width: 100%;
 }
 .button{
-    width: 100%;
-    margin-top: 30px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left:100px;
 }
 .cards-content{
     grid-template-columns: 1fr;
-    margin-top: 150px;
-}  */
+    margin-top: 30px;
+}  
 /* PG CONTATOS */
 .formulary{
     width: 30%;
