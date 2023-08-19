@@ -167,7 +167,7 @@ span{
     align-items: center;
 }
 
-@media screen and (max-width: 768px){ 
+@media (max-width: 768px){ 
     .footer-navigation{
         display: block;
     }
@@ -197,8 +197,6 @@ nav{
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-    margin-left:inherit;
-    margin-top: 20px;
 }
 .description{
     width: 100%;
@@ -211,8 +209,7 @@ nav{
 .cards-content{
     grid-template-columns: 1fr;
     margin-top: 30px;
-}  
-}
+} 
 /* PG CONTATOS */
 .formulary{
     width: 30%;
