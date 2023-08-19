@@ -177,12 +177,14 @@ nav{
 }
 #banner{
     background-position: 50%;
+    margin-top: 7px;
 }
 #trailer-container{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 7px;
 }
 .content{
     width: 100%;
