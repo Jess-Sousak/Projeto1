@@ -42,7 +42,7 @@ color: rgb(231, 12, 104);
     height: auto;
 }
 #banner{
-    background-image: url('../Midias/banner.png');
+    background-image: url('https://itajaishopping.com.br/wp-content/uploads/2023/07/filme-barbie-itajai-shopping-3.png');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -138,13 +138,13 @@ color: rgb(231, 12, 104);
 }
 
 .banner-1{
-    background-image: url('../Midias/card\ 1.jpg');
+    background-image: url('https://cdn.ome.lt/OyoDkbqbYtwAtg2JRihme3I4Zhs=/fit-in/1070x750/smart/filer_public/4f/c0/4fc0dd4b-a473-4803-b9b8-d7ae5f1be7aa/barbie_10.jpg');
 }
 .banner-2{
-    background-image: url('../Midias/card\ 2.jpg');
+    background-image: url('https://s2-vogue.glbimg.com/FmNhe17El_Iab8n7qo203-cBDGw=/0x0:480x600/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_5dfbcf92c1a84b20a5da5024d398ff2f/internal_photos/bs/2023/x/C/jqAddPQOijfNlCNKNEFg/339277575-166477655924790-1364217602656200753-n.jpeg');
 }
 .banner-3{
-    background-image: url('../Midias/card\ 3.jpg');
+    background-image: url('https://cdn.ome.lt/YYJIXYOfVzYgfLUa5wNCIxuZovM=/fit-in/1070x750/smart/filer_public/06/8c/068c975d-ab91-438a-aef0-3ec1ad925420/barbie_12.jpg');
 }
 footer{
     height: 300px;
