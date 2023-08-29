@@ -3,92 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum de Comentarios</title>
+    <title> Pag Comentarios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="containerform">
-        <h2 id="cont">Forum Barbie</h2>
-        <div class="thread" id="th1">
-            <h2> O que você achou do filme? <button id="bcoment">Mostrar Respostas</button></h2>
-            <div style="display: none;" class="respostas">
-                <p>Filme muito bom e bastante reflexivo</p>
-                <hr>
-                <p>Tema bem contemoraneo, um pouco complexo mas curti</p>
-                <hr>
-                <p>Cumpriu minhas expectativas</p>
-                <hr>
-                <form>
-                    <textarea></textarea>
-                    <input class="value" type="submit" name="acao" value="Enviar!"/>
-                </form>
-                </div>
-        </div> <!--thread-->
-    </div>
-    <div class="thread">
-        <h2> O que acharam da atuação dos atores? <button id="bcoment">Mostrar Respostas</button></h2>
-        <div style="display: none;" class="respostas">
-            <p>Gostei muito, a Margot Robbie foi sensacional no papel</p>
-            <hr>
-            <p>tiveram excelentes desempenho </p>
-            <hr>
-            <p>foi razoavel</p>
-            <hr>
-            <form >
-                <textarea></textarea>
-                <input class="value" type="submit" name="acao" value="Enviar"/>
-            </form>
-            </div>
-    </div> <!--thread-->
-</div>
-<div class="thread">
-    <h2> Esse filme tem potencial para ganhar o oscar desse ano? <button id="bcoment">Mostrar Respostas</button></h2>
-    <div style="display: none;" class="respostas">
-        <p>Não sei, foi lançado muito filme bom nesse ano</p>
-        <hr>
-        <p>Acredito que sim, foi um sucesso de bileteria mundial</p>
-        <hr>
-        <p>estou torcendo para que ganhe!</p>
-        <hr>
-        <form>
-            <textarea></textarea>
-            <input class="value" type="submit" name="acao" value="Enviar!"/>
-        </form>
-        </div>
-</div> <!--thread-->
-</div>
-    <script>
-        let buttonsResposta = document.querySelectorAll('.thread button');
-        for (let i = 0; i < buttonsResposta.length; i++){
-            buttonsResposta[i].addEventListener('click',()=>{
-                let respostas = document.querySelectorAll('.respostas');
-                respostas[i].style.display="block";
-            })
-        }
-        let forms = document.querySelectorAll('form');
-        for(let i = 0; i < forms.length; i++ ){
-            forms[i].addEventListener('submit', (e)=>{
-                e.preventDefault();
-                let conteudo = document.querySelectorAll('textarea')[i];
-                forms[i].insertAdjacentHTML('beforebegin','<p>'+ conteudo.value + '</p>')
-        })
-    }
-    </script>
+<section class="section-4">
+    <h1>COMENTARIOS</h1>
+    <div class="c-clientes">
+        <div class="paragrafo">
+            <div class="info-img" alt="info"> 
+                <img src="https://uploaddeimagens.com.br/images/004/591/372/full/quote-img.png?1693271501" alt="info">
+            </div><!-- info-img -->
+           <b><p>Filme muito bom e bastante reflexivo, gostei muito da Margot Robbie foi sensacional no papel</p></b>
+            <img src="https://uploaddeimagens.com.br/images/004/591/373/full/pic-1.png?1693271563" alt="pic-1">
+            <h4>Jean Smith</h4>
+            <div class="star">
+                <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-half-outline"></ion-icon></a>
+            </div><!-- star-->
+        </div><!-- paragrafo -->
 
-<p class="copright"> © 2023 Politica de Privacidade  </p> 
-</main>
+    <div class="paragrafo">
+        <div class="info-img" alt="info"> 
+            <img src="https://uploaddeimagens.com.br/images/004/591/372/full/quote-img.png?1693271501" alt="info">
+        </div><!-- info-img -->
+        <b><p>Tema bem contemoraneo, um pouco complexo mas curti,tiveram um excelente desempenho</p></b>
+        <img src="https://uploaddeimagens.com.br/images/004/591/375/full/pic-2.png?1693271604" alt="pic-2">
+        <h4>Julie Evans</h4>
+        <div class="star">
+            <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="star-half-outline"></ion-icon></a>
+        </div><!-- star-->
+    </div><!-- paragrafo -->
+
+<div class="paragrafo">
+    <div class="info-img" alt="info"> 
+        <img src="https://uploaddeimagens.com.br/images/004/591/372/full/quote-img.png?1693271501" alt="info">
+    </div><!-- info-img -->
+    <b><p>Cumpriu minhas expectativas,Acredito que foi um sucesso de bileteria mundial enfim recomendo</p></b>
+    <img src="https://uploaddeimagens.com.br/images/004/591/377/full/pic-3.png?1693271633" alt="pic-3">
+    <h4>Davi Cole</h4>
+    <div class="star">
+        <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="star-half-outline"></ion-icon></a>
+    </div><!-- star-->
+</div><!-- paragrafo -->
+</div><!-- c-clientes -->
+
+</section>
+<div class="copright"><p> © 2023 Politica de Privacidade  </p> </div>
 <footer id="footer">
+    <span>Todos os direitos reservados © | Desenvolvido por Jessica Sousa</span>
     <img id="logo" src="https://portaledicase.com/wp-content/uploads/2023/07/barbie-1.jpg"/>
-<span>Todos os direitos reservados © </span>
-<span>Desenvolvido por Jessica Sousa</span>
-    <nav class="footer-navigation">
-            <ul class="footer-list">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-            </ul>
-        </nav> 
+<nav class="footer-navigation">
+    <ul class="footer-list">
+        <a href="./index.html">
+            <li>Home</li>
+        </a>
+    </ul>
+</nav> 
 </footer> 
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
